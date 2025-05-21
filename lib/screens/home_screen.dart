@@ -1,5 +1,6 @@
 import 'package:cricket_scorer/screens/create_match_screen.dart';
 import 'package:cricket_scorer/screens/match_list_screen.dart';
+import 'package:cricket_scorer/screens/scoring_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -24,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) => CreateMatchScreen()),
+                  MaterialPageRoute(builder: (_) =>  ScoringScreen()), //CreateMatchScreen()),
                 );
               },
               style: ElevatedButton.styleFrom(minimumSize: Size.fromHeight(50), backgroundColor: const Color.fromARGB(255, 24, 46, 243)),
