@@ -8,7 +8,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Cricket Scorer', style: TextStyle(color: Colors.white),), centerTitle: !false, backgroundColor: Colors.green, ),
+      appBar: AppBar(
+        title: Text('Cricket Scorer', style: TextStyle(color: Colors.white)),
+        centerTitle: !false,
+        backgroundColor: Colors.green,
+      ),
       body: Padding(
         padding: EdgeInsets.all(24.0),
         child: Column(
@@ -27,7 +31,7 @@ class HomeScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ElevatedButton.icon(
-              icon: Icon(Icons.sports_cricket),
+              icon: Icon(Icons.history),
               label: Text('Previous Matches'),
               onPressed: () {
                 Navigator.push(
