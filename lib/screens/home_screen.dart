@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) =>  ScoringScreen()), //CreateMatchScreen()),
+                  MaterialPageRoute(builder: (_) =>  CreateMatchScreen()), 
                 );
               },
               style: ElevatedButton.styleFrom(minimumSize: Size.fromHeight(50), backgroundColor: const Color.fromARGB(255, 24, 46, 243)),
